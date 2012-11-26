@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>纯CSS3写的草帽海贼旗</title>
+<style>
+div{position:absolute}
+#straw-hat{position:relative;top:50px; left:300px;width:900px;height:900px; background:#000;}
+#strawhat1{
+    display:block;
+	top:353px; 
+	left:310px;
+    width: 280px;
+    height: 20px;
+    background-color: #FEBF00;
+    -webkit-border-radius: 140px 140px 140px 140px / 10px 10px 10px 10px;
+	-moz-border-radius: 140px 140px 140px 140px / 10px 10px 10px 10px;
+	z-index:2;
+}
+ 
+#strawhat2{
+	top:200px;
+	left:400px;
+    width: 100px;
+    height: 200px;
+    background-color: #FEBF00;
+    border-right:9px solid #890304;
+    -webkit-border-radius: 200px 0 0 200px;
+	-moz-border-radius: 200px 0 0 200px;
+    -webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+}
+
+#face{
+    top:310px;
+	left:403px;
+    width: 100px;
+    height: 200px;
+	border:1px solid #000;
+    background-color: #ffffff;
+    -webkit-border-radius: 200px 0 0 200px;
+	-moz-border-radius: 200px 0 0 200px;
+    -webkit-transform:rotate(270deg);
+	-moz-transform:rotate(270deg);
+	z-index:3;
+}
+#lefteye{
+    top:365px;
+	left:378px;
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    -webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	z-index:4;
+}
+#righteye{
+    top:365px;
+	left:473px;
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    -webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	z-index:4;
+}
+
+#nose{
+    top:420px;
+	left:443px;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    -webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	z-index:4;
+}
+
+
+#zuiba {
+   top:360px;
+   left:380px;
+   display:block;
+   width: 150px; 
+   height: 180px;
+   border:1px solid #000;
+   background-color: #fff;
+   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+   -moz-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+   z-index:1;
+   overflow:hidden;
+}
+.bone{background:#fff; width:600px;height:30px;}
+.bone-round{width:40px;height:40px; -webkit-border-radius:20px; -moz-border-radius:20px; background:#fff;}
+
+
+#tooth1 {
+   top:-40px;
+   left:-1px;
+   display:block;
+   width: 150px; 
+   height: 180px;
+   border:1px solid #000;
+   background-color: #fff;
+   -webkit-border-radius: 160px 160px 160px 160px / 108px 108px 72px 72px;
+   -moz-border-radius: 160px 160px 160px 160px / 108px 108px 72px 72px;
+   z-index:1;
+}
+#tooth2 {
+   top:-60px;
+   left:-1px;
+   display:block;
+   width: 150px; 
+   height: 180px;
+   border:1px solid #000;
+   background-color: #fff;
+   -webkit-border-radius: 160px 160px 160px 160px / 108px 108px 72px 72px;
+   -moz-border-radius: 160px 160px 160px 160px / 108px 108px 72px 72px;
+   z-index:1;
+}
+
+#tooth3 {
+   width:1px;
+   height:50px;
+   top:85px;
+   left:30px;
+   background:#000;
+   -webkit-transform:skewx(-4deg);
+   -moz-transform:skewx(-4deg);
+   z-index:10;
+}
+#tooth4 {
+   width:1px;
+   height:50px;
+   top:92px;
+   left:75px;
+   background:#000;
+   z-index:10;
+}
+#tooth5 {
+   width:1px;
+   height:50px;
+   top:83px;
+   left:120px;
+   background:#000;
+   -webkit-transform:skewx(4deg);
+   -moz-transform:skewx(4deg);
+   z-index:10;
+}
+</style>
+</head>
+<body style="margin:0;padding:0">
+<div id="title" style="left:500px; font-size:24px; font-weight:bold;">纯CSS3写的草帽海贼旗(兼容chrome和firefox)</div>
+<div id="straw-hat">
+    <div class="bone" style="-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg); top:370px; left:130px;">
+        <div class="bone-round" style="top:-25px; left:-20px;"></div>
+        <div class="bone-round" style="top:5px; left:-25px;"></div>
+        <div class="bone-round" style="top:10px; left:580px;"></div>
+        <div class="bone-round" style="top:-25px; left:580px;"></div>
+    </div>
+    <div class="bone" style="-webkit-transform:rotate(135deg); -moz-transform:rotate(135deg); top:360px; left:170px;">
+        <div class="bone-round" style="top:-25px; left:-20px;"></div>
+        <div class="bone-round" style="top:5px; left:-25px;"></div>
+        <div class="bone-round" style="top:10px; left:580px;"></div>
+        <div class="bone-round" style="top:-25px; left:580px;"></div>
+    </div>
+    <div id="strawhat1"></div>
+    <div id="strawhat2"></div>
+    <div id="face"></div>
+    <div id="lefteye"></div>
+    <div id="righteye"></div>
+    <div id="nose"></div>
+    <div id="zuiba">
+        <div id="tooth1"></div>
+        <div id="tooth2"></div>
+        <div id="tooth3"></div>
+        <div id="tooth4"></div>
+        <div id="tooth5"></div>
+    </div>
+</div>
+</body>
+</html>
